@@ -1,0 +1,19 @@
+* {
+  margin: 0; /* margen pradronizado */
+  padding: 0;
+  box-sizing: border-box; /* tamanho da caixa */
+}
+
+body {
+  background: #a60867; /* FUNDO */
+}
+
+header {
+  display: flex; /* FLEXBOX*/
+  justify-content: space-between ;
+align-items: center;
+width: 100%;
+padding:.5rem 1rem;
+border-bottom:1px solide #000; ;
+
+}
