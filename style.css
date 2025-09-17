@@ -5,20 +5,19 @@
 }
 
 body {
-  background: #a60867; /* FUNDO */
+  background: #5d028dd3; /* FUNDO */
 }
 
 header {
   display: flex; /* FLEXBOX*/
-  justify-content: space-between ;
-align-items: center;
-width: 100%;
-padding:.5rem 1rem;
-border-bottom:1px solid #000;
-position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #000;
+  position: fixed;
 }
 
-h1{
-padding-top: 1200px;
-
+h1 {
+  padding-top: 1200px;
 }
