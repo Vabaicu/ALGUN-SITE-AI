@@ -36,12 +36,10 @@ h1 {
     display: flex;
   }
 }
-.menu-link{
-
-text-decoration: none;
+.menu-link {
+  text-decoration: none;
 }
 
-
-.menu-text{
+.menu-text {
   text-transform: uppercase;
 }
