@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
   <head> 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +17,7 @@
   <nav class="menu-desktop">
         <ul class="menu menu-principal">
       <li>
-        <a href=""class="text-link">
+        <a href=""class="menu-link">
           <span class="menu-text"> 
             home
            </span>
@@ -25,24 +25,24 @@
       </li>
 
       <li>
-        <a href=""class="text-link">
-          <span lass="menu-text">
+        <a href=""class="menu-link">
+          <span class="menu-text">
              projeto
              </span>
         </a>
       </li>
 
       <li>
-        <a href=""class="text-link">
-          <span class="menu=text">
+        <a href=""class="menu-link">
+          <span class="menu-text">
              sobre 
             </span>
         </a>
       </li>
 
       <li>
-        <a href=""class="text-link">
-          <span class="menu=text">
+        <a href=""class="menu-link">
+          <span class="menu-text">
             contato
            </span>
         </a>
@@ -57,17 +57,66 @@
     </a>
   </div>
 
-  <!-- icone cor/ tema -->
-  <div>
-    <i class="bi bi-sun"></i>
-    <!-- icone  -->
+  <!-- trocar cor tema -->
+  <div class="header-toggle">
+    <i class="bi bi-sun" id="toggleTheme"></i>
+   
 
-    <!-- botão de lista mobile ou botão
-   hunburguer -->
+   
 
-    <button>
+    <button id="menuHamburger" class="btn-menu-mobile">
+       <!-- botão de lista mobile -->
       <i class="bi bi-list"></i>
     </button>
   </div>
-</header>
+
+
+
+<nav id="menuMobile" class="menu menu-mobile">
+        <ul class="menu-list">
+      <li>
+        <a href=""class="menu-link">
+          <span class="menu-text"> 
+            home
+           </span>
+        </a>
+      </li>
+
+      <li>
+        <a href=""class="menu-link">
+          <span class="menu-text">
+             projeto
+             </span>
+        </a>
+      </li>
+
+      <li>
+        <a href=""class="menu-link">
+          <span class="menu-text">
+             sobre 
+            </span>
+        </a>
+      </li>
+
+      <li>
+        <a href=""class="menu-link">
+          <span class="menu-text">
+            contato
+           </span>
+        </a>
+      </li>
+    </ul>
+
+
+</nav>
+
+  </header>
+
+
+
+
+<!-- js -->
+<script src="js/script.js"></script>
 </body>
+
+</html>

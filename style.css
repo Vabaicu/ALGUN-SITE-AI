@@ -1,11 +1,32 @@
+/* cor dark */
+:root,
+:root[data-theme="dark"] {
+--fundo-secumdario: gray;
+  --cor-fundo: #1d1d1d;
+  --txt-menu-link: #eeeeee;
+  --borda: #eeeeee;
+  --icon-theme: #eeeeee;
+}
+
+/* cor light */
+:root[data-theme="light"] {
+  --fundo-secumdario: gray
+  --cor-fundo: rgb(223, 223, 223);
+  --txt-menu-link: #1d1d1d;
+  --borda:#1d1d1d;
+  --icon-theme: #1d1d1d;
+}
+
+/* reset CSS */
 * {
-  margin: 0; /* margen pradronizado */
+  margin: 0; /* margen padronizado */
   padding: 0;
   box-sizing: border-box; /* tamanho da caixa */
 }
 
 body {
-  background: #5d028dd3; /* FUNDO */
+  /* FUNDO */
+  background: var(--cor-fundo);
 }
 
 header {
@@ -14,7 +35,7 @@ header {
   align-items: center;
   width: 100%;
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid var(--borda);
   position: fixed;
 }
 
@@ -42,4 +63,25 @@ h1 {
 
 .menu-text {
   text-transform: uppercase;
+  color: var(--txt-menu-link);
+   color:var(--icon-theme);
+}
+#toggleTheme{
+ 
+  cursor: pointer; /* virou mão */
+}
+
+.menu-mobile {
+  display: none;
+  top: 0;
+right:0;
+transform: translatex(); /* 100% */
+background: var(--fundo-secumdario);
+width: 75%;
+display: flex;
+flex-direction: column;
+max-width: 320px;
+padding-top: 4rem ;
+height: 100vh;
+border-left: 1px solid var(--borda);
 }
