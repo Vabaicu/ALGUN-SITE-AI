@@ -6,6 +6,8 @@
   --txt-menu-link: #eee;
   --borda: #eee;
   --icon-theme: #eee;
+  --cor-titulo: #eaeaea
+  --cor-texto: #cacaca:
 }
 
 /* Cor Light */
@@ -15,6 +17,17 @@
   --txt-menu-link: #1d1d1d;
   --borda: #1d1d1d;
   --icon-theme: #1d1d1d;
+  --cor-titulo: #111217;
+  --cor-texto: #111217
+}
+
+/* aparencia da barra de rolagem */
+
+html{
+  scroll-behavior: smooth;
+/* efeito/ comportamento */
+scrollbar-width: thin;
+scrollbar-color: var(--fundo-secundario)transparent ;
 }
 
 /* Reset CSS */
@@ -123,10 +136,22 @@ header {
   color: red;
 }
 
+h1 { 
+front-size: 2.5rem
+color: var(var(--cor-titulo))
+
+}
+p
+
+
 section{
   padding: 150PX;
   color: #eee;
 }
+
+
+
+
 
 /* Responsividade */
 /* A partir de 768 */
