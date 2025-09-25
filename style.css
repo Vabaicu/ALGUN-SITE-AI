@@ -1,3 +1,33 @@
+/* GOOGLE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Faculty+Glyphic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 
+Roboto
+font-family: "Roboto", sans-serif;
+
+
+
+Bad Script
+Static
+font-optical-sizing: auto;
+
+
+Faculty Glyphic
+Static
+  font-weight: <weight>;
+
+*/
+
+/* fontes */
+.root{
+  --font-titolo-h1:"roboto",serif;
+  --fonte-subistituto-h2: ;
+  --fonte-subistituto-h3: "faculty glyphic"
+
+}
+
+
+
 /* Cor DARK */
 :root,
 :root[data-theme="dark"] {
@@ -145,9 +175,12 @@ header {
 .menu-link:hover .menu-text {
   color: red;
 }
-
+/* h1 base */
 h1 {
-  font-size: 2.5rem color var(--cor-titulo)
+  font-size: 2.5rem;
+  color: rgb(104, 3, 104);
+  font-family: var(--font-titolo-h3);
+  font-weight: 500;
 }
 
 p {
@@ -168,7 +201,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  
+
 }
 
 
@@ -184,4 +217,26 @@ p {
     display: none;
     /* some no pc e aparece no celular */
   }
+
+  h1 {
+    font-size: 5rem;
+  }
 }
+
+/* telas 992 */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 6rem;
+
+  }
+}
+
+/* telas 1400px */
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 7rem;
+
+  }
+}
+
+
