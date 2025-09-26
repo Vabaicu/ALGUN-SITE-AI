@@ -1,5 +1,5 @@
 /* GOOGLE FONTES */
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Faculty+Glyphic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Faculty+Glyphic&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* 
 Roboto
@@ -19,14 +19,12 @@ Static
 */
 
 /* fontes */
-.root{
-  --font-titolo-h1:"roboto",serif;
+.root {
+  --font-titolo-h1: "roboto", serif;
+  --fonte-texto:"font-weight": <weight>;
   --fonte-subistituto-h2: ;
-  --fonte-subistituto-h3: "faculty glyphic"
-
+  --fonte-subistituto-h3: "faculty glyphic";
 }
-
-
 
 /* Cor DARK */
 :root,
@@ -38,6 +36,8 @@ Static
   --icon-theme: #eee;
   --cor-titulo: #eaeaea;
   --cor-texto: #cacaca;
+  --hover-link: #f0f0f0;
+  --cor-link: #a3a2a2;
 }
 
 /* Cor Light */
@@ -49,6 +49,8 @@ Static
   --icon-theme: #1d1d1d;
   --cor-titulo: #111217;
   --cor-texto: #cacaca;
+  --hover-link: #111217;
+  --cor-link: #a3a2a2;
 }
 
 /* aparencia da barra de rolagem */
@@ -57,7 +59,7 @@ html {
   scroll-behavior: smooth;
   /* efeito/ comportamento */
   scrollbar-width: thin;
-  scrollbar-color: var(--fundo-secundario)transparent;
+  scrollbar-color: var(--fundo-secundario) transparent;
 }
 
 /* Reset CSS */
@@ -111,13 +113,19 @@ header {
 .menu-text {
   text-transform: uppercase;
   color: var(--txt-menu-link);
+  font-family: var(--font-texto);
 }
 
 #toggleTheme {
   color: var(--icon-theme);
   cursor: pointer;
   /* Aparencia Seta Mouse */
+
 }
+#toggleTheme:hover{
+  color: var(--fundo-secundario);
+}
+
 
 .menu-mobile {
   position: fixed;
@@ -171,10 +179,12 @@ header {
   text-align: center;
 }
 
+/* herança */
 .menu-link.active .menu-text,
 .menu-link:hover .menu-text {
-  color: red;
+  color: #a3a2a2;
 }
+
 /* h1 base */
 h1 {
   font-size: 2.5rem;
@@ -201,8 +211,23 @@ p {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-
 }
+
+/* herança */
+.menu-social i {
+  color: var(--cor-link);
+  font-size: 1.5rem;
+}
+
+.menu-social i:hover {
+  color: var(--hover-link);
+}
+
+
+
+
+
+
 
 
 
@@ -227,7 +252,6 @@ p {
 @media (min-width: 992px) {
   h1 {
     font-size: 6rem;
-
   }
 }
 
@@ -235,8 +259,5 @@ p {
 @media (min-width: 1400px) {
   h1 {
     font-size: 7rem;
-
   }
 }
-
-
