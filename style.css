@@ -52,6 +52,10 @@ Static
   --hover-link: #111217;
   --cor-link: #a3a2a2;
 }
+html[data-theme="light"] .logo{
+  filter: invert(0);
+}
+
 
 /* aparencia da barra de rolagem */
 
@@ -91,6 +95,12 @@ header {
   /* Camadas */
   background: var(--cor-fundo);
 }
+
+.logo{
+  width: 6rem;/* coprimento */
+  height: auto; /* altura */
+}
+
 
 /* nav */
 .menu-desktop {
@@ -246,6 +256,12 @@ p {
   h1 {
     font-size: 5rem;
   }
+
+
+.header-logo{
+min-height: 30%;
+
+}
 }
 
 /* telas 992 */
