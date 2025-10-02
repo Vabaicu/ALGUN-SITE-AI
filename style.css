@@ -22,7 +22,7 @@ Static
 .root {
   --font-titolo-h1: "roboto", serif;
   --fonte-texto:"font-weight": <weight>;
-  --fonte-subistituto-h2: ;
+  --fonte-subistituto-h2: "Bad Script";
   --fonte-subistituto-h3: "faculty glyphic";
 }
 
@@ -203,18 +203,29 @@ h1 {
   font-weight: 500;
 }
 
+h2{
+  text-align: center;
+  font-size: 2rem ;
+  font-family: var(--fonte-subistituto-h3);
+}
+
 p {
   color: var(--cor-texto);
 }
 
-#home {
+#home, 
+.projetos,
+.sobre,
+.contato {
   padding: 3.5rem 1rem;
+
 }
 
 /* flexbox sahome */
 #home {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
 }
 
 .main-content {
@@ -233,11 +244,80 @@ p {
   color: var(--hover-link);
 }
 
+.descricao-video{
+display: flex;
+flex-direction:column;
+justify-content: flex-start;
+align-items: center;
+gap: 1.25rem;
+padding: 6.25 1rem 2rem;
+background-color: purple;
+margin-top: -5.5rem;
+}
+
+.video iframe{
+  aspect-ratio: 16/9;
+}
+.descricao-video h2{
+font-size: 4rem;
+text-transform:normal;
+letter-spacing: normal;
+text-align: center;
+margin-top: -0.1rem;
+}
+
+/* projetos */
+.projetos{
+  display: flex;
+  gap: 4rem;
+  flex-direction:column ;
+}
+.projetos-container{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto-card{
+   gap: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-card{
+  border-radius:3rem 3rem;
+  width: 100%;
+  box-shadow: 12px 27px 19px 11px rgba(0, 0, 0, 0.89);
+pointer-events: none;
+object-fit: cover;
+object-position: center;
+}
+
+.card-body{
+  flex-direction: column;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+align-items: flex-start;  
+}
+
+
+
+.card-list{
+  list-style: none;
+}
 
 
 
 
 
+
+
+@media (max-width: 768px){
+  #home{
+    padding-top:1rem 6rem
+  }
+}
 
 
 
@@ -262,18 +342,43 @@ p {
 min-height: 30%;
 
 }
+#home,
+.projetos
+.sobre{
+  padding:8rem 6rem 4rem 6rem;
 }
+.main-content{
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+}
+.descricao-video{
+  padding: 6.25 1rem 2rem ;
+}
+
 
 /* telas 992 */
 @media (min-width: 992px) {
   h1 {
     font-size: 6rem;
   }
+
+.projeto-card{
+  flex-direction: row;
+}
+.img-card{
+  width: 55%;
+}
 }
 
 /* telas 1400px */
 @media (min-width: 1400px) {
   h1 {
     font-size: 7rem;
+  }
+  .descricao-video h2{
+    font-size: 4.5rem;
+    text-align:start ;
   }
 }

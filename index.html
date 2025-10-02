@@ -1,188 +1,270 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
+<!-- Idioma -->
 
 <head>
   <meta charset="UTF-8" />
+  <!-- escala da tela -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>portifolio|corrêa</title>
+  <!-- Titulo da Pagina -->
+  <title>Portfolio corrêa </title>
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
 
-  <!-- css -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- icones bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+  <!-- https://icons.getbootstrap.com/#install -->
 </head>
 
+<body>
+  <header>
+    <!-- MENU DESKTOP -->
+    <nav class="menu-desktop">
+      <ul class="menu menu-principal">
+        <li>
+          <a href="#home" class="menu-link active">
+            <span class="menu-text"> HOME </span>
+          </a>
+        </li>
+        <li>
+          <a href="#projetos" class="menu-link">
+            <span class="menu-text"> Projetos </span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="menu-link">
+            <span class="menu-text"> SOBRE </span>
+          </a>
+        </li>
+        <li>
+          <a href="" class="menu-link">
+            <span class="menu-text"> CONTATO </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
 
-<header>
-  <nav class="menu-desktop">
-    <ul class="menu menu-principal">
-      <li>
+    <!-- LOGO -->
+    <div class="header-logo">
+      <a href="#home">
+        <img src="img/logo.png" class="logo" />
+      </a>
+    </div>
+    <!-- div -->
+
+    <!-- ICONE COR TEMA -->
+    <div class="header-toggle">
+      <i class="bi bi-sun" id="toggleTheme"></i>
+
+      <button id="menuHamburger" class="btn-menu-mobile">
+        <!-- BOTAO LISTA MOBILE -->
+        <i class="bi bi-list"></i>
+        <!-- MENU HAMBURGER-->
+      </button>
+    </div>
+  </header>
+
+
+  <!-- MENU LISTA MOBILE -->
+  <nav id="menuMobile" class="menu menu-mobile">
+    <ul class="menu-list">
+      <li class="menu-item">
         <a href="#home" class="menu-link active">
-          <span class="menu-text">
-            home
-          </span>
+          <span class="menu-text"> HOME </span>
         </a>
       </li>
-
-      <li>
+      <li class="menu-item">
         <a href="#projetos" class="menu-link">
-          <span class="menu-text">
-            projeto
-          </span>
+          <span class="menu-text"> Projetos </span>
         </a>
       </li>
-
-      <li>
-        <a href="#sobre" class="menu-link">
-          <span class="menu-text">
-            sobre
-          </span>
+      <li class="menu-item">
+        <a href="" class="menu-link">
+          <span class="menu-text"> SOBRE </span>
         </a>
       </li>
-
-      <li>
-        <a href="#contato" class="menu-link">
-          <span class="menu-text">
-            contato
-          </span>
+      <li class="menu-item">
+        <a href="" class="menu-link">
+          <span class="menu-text"> CONTATO </span>
         </a>
       </li>
     </ul>
   </nav>
 
-  <!-- logo -->
-  <div class="header-logo">
-    <a href="#home">
-      <img src="img/logo (2).png" class="logo" />
-    </a>
-  </div>
 
-  <!-- trocar cor tema -->
-  <div class="header-toggle">
-    <i class="bi bi-sun" id="toggleTheme"></i>
+  <main id="home">
 
+    <!-- Carrossel Bootstrap // Slides/Banner -->
+    <section id="carouselBootstrap">
+    </section>
 
-    <button id="menuHamburger" class="btn-menu-mobile">
-      <!-- botão de lista mobile -->
-      <i class="bi bi-list"></i>
-    </button>
-  </div>
+    <!-- Slogan -->
+    <div class="main-content">
 
-</header>
+      <h1>
+        Portal dos Reinos
+      </h1>
 
-<nav id="menuMobile" class="menu menu-mobile">
-  <ul class="menu-list">
-    <li class="menu-item">
-      <a href="#home " class="menu-link active">
-        <span class="menu-text">
-          home
-        </span>
-      </a>
-    </li>
+      <p>
+        Gustavo Feriani, São Paulo - SP, Dev e Instrutor Front-End.
+      </p>
 
-    <li class="menu-item">
-      <a href="#projetos" class="menu-link">
-        <span class="menu-text">
-          projeto
-        </span>
-      </a>
-    </li>
+      <ul class="menu menu-social">
+        <!-- Github -->
+        <li>
+          <a href="https://github.com/guuhferiani" target="_blank">
+            <i class="bi bi-github"></i>
+          </a>
+        </li>
 
-    <li class="menu-item">
-      <a href="#sobre" class="menu-link">
-        <span class="menu-text">
-          sobre
-        </span>
-      </a>
-    </li>
+        <li>
+          <a href="https://wa.me/5511" target="_blank">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+        </li>
 
-    <li class="menu-item">
-      <a href="#contato" class="menu-link">
-        <span class="menu-text">
-          contato
-        </span>
-      </a>
-    </li>
-  </ul>
+      </ul>
 
-</nav>
+    </div>
 
-<!-- carrocel boontstrap // slades;banner -->
-<main id="home">
+    <div class="video">
 
-  <section id="carouselbootstrap">
+      <iframe src="https://www.youtube.com/embed/k34Kt-_lC00" title="Como jogar RPG?" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
+  </main>
+
+  <section class="descricao-video">
+    <h2>
+      Conheça os meus projetos.
+    </h2>
   </section>
 
-  <!-- slogan-->
-  <div class="main-cotent">
+  <!-- Projetos -->
+  <section id="projetos" class="projetos">
+    <h2> Projetos </h2>
+
+    <div class="projeto-container">
+
+      <!-- PROJETO 1 -->
+      <div class="projeto-card">
+
+        <img src="img/projetos/cd511202-2427-43f9-8021-6c75ce484b3e.png"
+          alt="Um grupo de aventureiros encara um dragão vermelho colossal dentro de uma caverna. O guerreiro ergue sua espada, a elfa prepara a lâmina, o mago segura uma chama mística e o anão empunha seu machado e escudo. A cena transmite coragem, desafio e a essência da fantasia medieval, perfeita para representar aventuras de RPG." class="img-card">
+
+        <div class="card-body">
+
+          <h1 class="card-title"> Games Store </h1>
+
+          <p class="card-descricao">
+            Loja online para Vendas de figuras e mostros.
+          </p>
+
+          <ul class="card-list">
+            <li class="card-item">
+              <i class="bi bi-playstation"></i>
+              Jogos de PS5
+            </li>
+            <li class="card-item">
+              <i class="bi bi-nintendo-switch"></i>
+              Jogos de Nintendo Switch
+            </li>
+            <li class="card-item">
+              <i class="bi bi-dice-1"></i>
+              dados
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- Fim PROJETO 1 -->
+
+
+      <!-- PROJETO 2 -->
+      <div class="projeto-card">
+
+        <img src="img/projetos/07f79587-b7b1-4f64-95c8-c7f55eebd815.png" alt=""class="img-card">
+
+        <div class="card-body">
+
+          <h2 class="card-title"> Josis Box </h2>
+
+          <p class="card-descricao">
+            Livraria Digital.
+          </p>
+
+          <ul class="card-list">
+            <li class="card-item">
+              <i class="bi bi-bookmark-heart"></i>
+              Livros Romance
+            </li>
+            <li class="card-item">
+              <i class="bi bi-fork-knife"></i>
+              Livros Culinaria
+            </li>
+            <li class="card-item">
+              <i class="bi bi-chat-dots-fill"></i>
+              Livro de autoajuda
+            </li>
+          </ul>
+        </div>
+
+              <div class="card-body">
+
+      <img src="img/projetos/bd103647-27c7-43b4-b53d-5f926fe0b9aa.png" alt=""class="img-card">
+
+          <h3 class="card-title"> haydyfon </h3>
+
+          <p class="card-descricao">
+            Livraria Digital.
+          </p>
+
+          <ul class="card-list">
+            <li class="card-item">
+              <i class="bi bi-bookmark-heart"></i>
+              Livros Romance
+            </li>
+            <li class="card-item">
+              <i class="bi bi-fork-knife"></i>
+              Livros Culinaria
+            </li>
+            <li class="card-item">
+              <i class="bi bi-chat-dots-fill"></i>
+              Livro de autoajuda
+            </li>
+          </ul>
+        </div>
 
 
 
-    <h1>
-      soluções criativas de desenvolvimento front-end
-    </h1>
+      </div>
+      <!-- Fim PROJETO 1 -->
 
-    <P>
-      meu nome é vinicius corrêa leite, moro em São Paulo (SP),progamador amador sou sabido e bem legal !!!
-    </P>
+    </div>
 
-    <ul class="menu menu-social">
+  </section>
 
-      <!-- guit hub -->
-      <li>
-        <a href="https://github.com/Vabaicu" target="_blank">
-          <i class="bi bi-github"></i>
-        </a>
-      </li>
+  <section id="sobre" class="sobre">
+    Sobre
+  </section>
 
-      <li>
-        <a href="https://wa.me/116669409" target="_blank">
-          <i class="bi bi-whatsapp"></i>
+  <section id="contato" class="contato">
+    Contato
+  </section>
 
-        </a>
+  <footer>
+    <p> &copy; 2025. </p>
+  </footer>
 
-
-      </li>
-
-
-
-    </ul>
-
-
-  </div>
-
-
-
-</main>
-
-
-
-
-
-
-
-
-<!-- projeto -->
-<section id="projetos" class="projetos">
-  projetos
-</section>
-
-<section id="sobre" class=" sobre">
-  sobre
-</section>
-
-<section id="contato" class="contato">
-  contato
-</section>
-
-<footer>
-  <P> &copy; </P>
-</footer>
-
-
-<!-- js -->
-<script src="js/script.js"></script>
+  <!-- JS -->
+  <script src="js/script.js"></script>
 </body>
 
 </html>
+
+<!-- ALT + SHIFT + A = Comentario -->
+<!-- ALT + SHIFT + F = Identação -->
+<!-- Shift + ! = Iniciar html -->
