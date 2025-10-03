@@ -205,12 +205,19 @@ h1 {
 
 h2{
   text-align: center;
-  font-size: 2rem ;
+  font-size: 2.8rem ;
   font-family: var(--fonte-subistituto-h3);
 }
+h3{
+   font-size: 2rem ;
+   font-family: var(--fonte-subistituto-h3);
+   text-transform: uppercase;
+}
 
-p {
-  color: var(--cor-texto);
+p,
+span,
+li {
+  font-size: 1.5rem;
 }
 
 #home, 
@@ -287,7 +294,7 @@ margin-top: -0.1rem;
 .img-card{
   border-radius:3rem 3rem;
   width: 100%;
-  box-shadow: 12px 27px 19px 11px rgba(0, 0, 0, 0.89);
+  box-shadow: 12px 7px 19px 11px rgba(0, 0, 0, 0.89);
 pointer-events: none;
 object-fit: cover;
 object-position: center;
@@ -307,10 +314,18 @@ align-items: flex-start;
   list-style: none;
 }
 
+.card-title{
+  color: #1d951da7;
+ font-size: 2rem;
+ font-weight: 400;
+}
 
-
-
-
+.card-list .card-item {
+  margin-bottom: 10px;
+}
+.card-list .card-item:hover i {
+  color: #1fca1fa7;
+}
 
 
 @media (max-width: 768px){
@@ -338,6 +353,10 @@ align-items: flex-start;
   }
 
 
+h2{
+  font-size: 6rem;
+}
+
 .header-logo{
 min-height: 30%;
 
@@ -358,6 +377,9 @@ align-items: flex-start;
 }
 
 
+
+
+
 /* telas 992 */
 @media (min-width: 992px) {
   h1 {
@@ -370,15 +392,33 @@ align-items: flex-start;
 .img-card{
   width: 55%;
 }
+.card-reverse {
+flex-direction: row-reverse;
+justify-content: center;
+}
 }
 
+@media(min-width:1200){
+h2{
+  font-size: 6rem;
+}
+h3{
+   font-size: 4rem ;
+}
+}
 /* telas 1400px */
 @media (min-width: 1400px) {
   h1 {
     font-size: 7rem;
   }
+    h2{
+  font-size: 5rem;
+}
   .descricao-video h2{
-    font-size: 4.5rem;
+    font-size: 4rem;
     text-align:start ;
   }
+h3{
+   font-size: 4rem ;
+}
 }
