@@ -280,7 +280,7 @@ margin-top: -0.1rem;
   flex-direction:column ;
 }
 .projetos-container{
-  gap: 2rem;
+  gap: 5rem;
   display: flex;
   flex-direction: column;
 }
@@ -326,6 +326,92 @@ align-items: flex-start;
 .card-list .card-item:hover i {
   color: #1fca1fa7;
 }
+
+/* sobre */
+.sobre{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sobre-content1,
+.sobre-content2{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.sobre-avatar{
+  width: 100%;
+  border-radius: 50rem;
+}
+
+
+.sobre-descricao{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.sobre-icones,
+.sobreskills{
+display:flex ;
+align-items:center;
+gap: 1.25rem;
+}
+.sobre-icones i,
+.sobreskills i{
+  font-size: 1.25rem;
+}
+
+
+.sobre-content2 .col1,
+.sobre-content2 .col2{
+  display: flex;
+  text-align: justify;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
+.sobre-content2 .col1 .formacao,
+.sobre-content2 .col2 .exp{
+  display: flex;
+  flex-direction: column;
+  gap:  .5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* accordion */
+
+.accordion-body{
+  display: none;
+}
+
+.accordion-item.active .accordion-body {
+display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill{
+  transform: rotate(180deg);
+}
+
 
 
 @media (max-width: 768px){
@@ -396,7 +482,23 @@ align-items: flex-start;
 flex-direction: row-reverse;
 justify-content: center;
 }
+.sobre-content1,
+.sobre-content2{
+display: grid;
+grid-template-columns: 50% 50%;
+justify-content: flex-start;
+align-items: flex-start;
+gap: 4rem;
 }
+
+
+
+
+}
+
+
+
+
 
 @media(min-width:1200){
 h2{
