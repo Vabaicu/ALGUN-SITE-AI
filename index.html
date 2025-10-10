@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="pt-br" data-theme="dark">
-<!-- Idioma -->
+  <!-- Idioma -->
 
-<head>
+  <head>
   <meta charset="UTF-8" />
   <!-- escala da tela -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,9 +14,9 @@
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
   <!-- https://icons.getbootstrap.com/#install -->
-</head>
+  </head>
 
-<body>
+  <body>
   <header>
     <!-- MENU DESKTOP -->
     <nav class="menu-desktop">
@@ -37,7 +37,7 @@
           </a>
         </li>
         <li>
-          <a href="" class="menu-link">
+          <a href="#contato" class="menu-link">
             <span class="menu-text"> CONTATO </span>
           </a>
         </li>
@@ -84,7 +84,7 @@
         </a>
       </li>
       <li class="menu-item">
-        <a href="" class="menu-link">
+        <a href="#contato" class="menu-link">
           <span class="menu-text"> CONTATO </span>
         </a>
       </li>
@@ -110,7 +110,7 @@
       </p>
 
       <ul class="menu menu-social">
-        
+
         <!-- Github -->
         <li>
           <a href="https://github.com/Vabaicu" target="_blank">
@@ -128,27 +128,27 @@
 
     </div>
 
-    <div class="video">
+      <div class="video">
 
-      <iframe src="https://www.youtube.com/embed/k34Kt-_lC00" title="Como jogar RPG?" frameborder="0"
+        <iframe src="https://www.youtube.com/embed/k34Kt-_lC00" title="Como jogar RPG?" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    </div>
+      </div>
 
-  </main>
+      </main>
 
-  <section class="descricao-video">
-    <h2>
-      Conheça os meus projetos.
-    </h2>
-  </section>
+      <section class="descricao-video">
+        <h2>
+        Conheça os meus projetos.
+        </h2>
+      </section>
 
-  <!-- Projetos -->
-  <section id="projetos" class="projetos">
-    <h2> Projetos </h2>
+      <!-- Projetos -->
+      <section id="projetos" class="projetos">
+      <h2> Projetos </h2>
 
-    <div class="projetos-container">
+      <div class="projetos-container">
 
       <!-- PROJETO 1 -->
       <div class="projeto-card">
@@ -279,9 +279,9 @@
 
     </div>
 
-  </section>
+    </section>
 
-  <section id="sobre" class="sobre">
+    <section id="sobre" class="sobre">
 
     <!-- grid colunas -->
     <div class="sobre-content1">
@@ -416,7 +416,7 @@
 
   <section id="contato" class="contato">
     <h2>contato</h2>
-<p> para me contatar sobre qualquer coisa de rpg</p>
+    <p> para me contatar sobre qualquer coisa de rpg</p>
 
     <ul class="menu-social">
       <li>
@@ -449,25 +449,22 @@
       <div class="contato-formulario">
         <h2>fala com o mestre </h2>
 
-        <form action="" method="post">
+        <form action="https://formspree.io/f/xdkwwaek" method="post" class="form-contato">
 
-          <input type="text" placeholder="nome completo*" required> <!-- placeholder = marca dagua-->
+          <input type="text" name="nome" placeholder="nome completo*" required> <!-- placeholder = marca dagua-->
 
-
-          <input type="email" name="" id="" placeholder="seu email " required>
+          <input type="email" name="email"  placeholder="seu email " required>
 
           <label for="">pq vc quer emtar?</label>
-          <textarea name="pq vc quer emtar?*" id="" required></textarea>
-         
-          <input type="tel" placeholder="seu telefone" required>
+          <textarea name="pq vc quer emtar?*" id="" placeholder="pq vc quer emtar?" rows="6" required ></textarea>
 
-          <input type="text" placeholder="assunto" required>
+          <input type="tel" name="telefone" id="telefone" placeholder="seu telefone" required>
 
-          <label for=""> senha </label>
-          <input type="password" name="" id="" placeholder="digite sua senha" required>
+          <input type="text" name="assunto" placeholder="assunto" required>
 
-              <button type="submit">
+          <button type="submit" class="btn-primario">
             <span>enviar</span>
+            <i class="bi bi-send"></i>
           </button>
 
         </form>
@@ -479,25 +476,35 @@
 
       <div class="contato-mapa">
 
-       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d147327.0789321373!2d69.23489106223212!3d-49.63749918656753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb36cabf2d157c333%3A0x61519604daf263f0!2sMont%20Ross!5e0!3m2!1spt-BR!2sbr!4v1759966958229!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d147327.0789321373!2d69.23489106223212!3d-49.63749918656753!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb36cabf2d157c333%3A0x61519604daf263f0!2sMont%20Ross!5e0!3m2!1spt-BR!2sbr!4v1759966958229!5m2!1spt-BR!2sbr"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
       </div>
 
-
     </div>
 
+    </section>
 
 
 
-  </section>
 
-  <footer>
-    <p> &copy; 2025. </p>
-  </footer>
+    <footer>
+      <p> &copy; 2025. 
+        portifolio desenvolvido para fins educativos nas aulas do 
+        <a href="https://github.com/guuhferiani/portfolio-feriani">
+          prof gustavo
+        </a>
+     <a href="https://github.com/Vabaicu" target="_blank">
+      <i class="bi bi-github"></i>
+      desenvolvido por vinicius
+     </a>
+      </p>
+    </footer>
 
-  <!-- JS -->
-  <script src="js/script.js"></script>
-</body>
+    <!-- JS -->
+      <script src="js/script.js"></script>
+  </body>
 
 </html>
 
